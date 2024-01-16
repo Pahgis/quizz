@@ -10,11 +10,11 @@ if (
 
     require_once '../../config/connexion.php';
     $hashpwd = password_hash($_POST["password"], PASSWORD_DEFAULT);
-    $prepareRequest = $connexion->prepare("INSERT INTO users (pseudo, pwd, mail) VALUE (?,?,?");
+    $prepareRequest = $connexion->prepare("INSERT INTO users (pseudo, pwd, mail) VALUES (?,?,?)");
     $prepareRequest->execute([
         $_POST["pseudo"],
         $hashpwd,
         $_POST["email"]
     ]);
-    header('Location : ../../quizz.php');
+    header('Location: ../../index.php');
 }

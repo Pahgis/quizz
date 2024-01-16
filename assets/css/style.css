@@ -6,3 +6,7 @@ body{
 .signIn{
     display: none;
 }
+.menubtn{
+    width: 50%;
+    height: 50%;
+}

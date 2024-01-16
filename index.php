@@ -30,12 +30,12 @@
             </div>
             <div class="logIn">
             <h1>Connexion : </h1>
-                <form action="" method="post" autocomplete="off">
+                <form action="./process/login/login.php" method="post" autocomplete="off">
                     <div>
                         <input class="form-control" type="text" name="pseudo" autocomplete="off" id="pseudo" placeholder="Boom">
                     </div>
                     <div>
-                        <input class="form-control" type="password" autocomplete="off" name="pseudo" id="pseudo" placeholder="Password">
+                        <input class="form-control" type="password" autocomplete="off" name="password" id="password" placeholder="Password">
                         <a href="#" class="link-primary switchon" >Pas inscrit ? clique ici !</a>
 
                     </div>
