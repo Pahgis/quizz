@@ -13,7 +13,10 @@ function getUsers() {
             partys.forEach(party => {
                
                 partydiv.innerHTML += `
-            <a href="./party.php?id=${party['id']}&&iduser=${id_user}">Party  ${party['id']}</a>
+                <input type="hidden" name="party" value="${party['id']}">
+                <button type="submit">Party  ${party['id']}</button>
+               
+           
         `
             });
         })

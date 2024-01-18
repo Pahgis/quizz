@@ -10,7 +10,13 @@ if(!empty($_POST["numberQuestion"])){
         $_POST["id"]
     ]);
     $party = $connexion->lastInsertId();
-     header('Location: ../../party.php?admin=1&&party=' . $party);
+
+    $requestparty = $connexion->prepare("INSERT INTO partyusers (id_party, users_1) VALUES (?,?)");
+    $requestparty->execute([
+      $party,
+      $_POST["id"]
+    ]);
+     header('Location: ../../party.php?party=' . $party);
 
 
 }

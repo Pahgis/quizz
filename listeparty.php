@@ -8,10 +8,12 @@
 </div>
 <div class="row">
     <div class="col-4"></div>
-    <div class="party d-flex flex-column"></div>
+    <div class="d-flex flex-column"></div>
 </div>
+<form action="./process/client/party_log.php" method="POST">
 <input type="hidden" name="id_user" value="<?=$_GET["id"] ?>">
-
+<div class="party"></div>
+</form>
 
 <script src="./assets/js/connectedlist/partylist.js"></script>
 <?php include './partials/footer.php' ?>
